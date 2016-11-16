@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>国培2012 视频播放</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+html, body { height:100%; margin:0; padding:0; text-align:center; }
+</style>
+</head>
+<body>
+<script type="text/javascript" src="cmp.js"></script> 
+
+<script type="text/javascript" src="cmp_wheelfix.js"></script> 
+<div id="cmp_area" style="position:relative;width:100%;height:100%;margin:0px auto;"></div>
+<script type="text/javascript">
+
+function cmp_loaded(key) {
+	var cmpo = CMP.get("cmp");
+	if (!cmpo) {
+		alert("CMP初始化错误");
+		return;	
+	}
+	
+	
+	if (CMPEI) {
+		CMPEI.init(key, cmpo);
+	} else {
+		alert("CMP扩展接口初始化错误");	
+	}
+}
+
+var flashvars = {
+	
+	api : "cmp_loaded"
+};
+
+
+var htm = CMP.create("cmp", "100%", "100%", "cmp.swf?url=peizhi.dll", flashvars, {wmode:"opaque"});
+document.getElementById("cmp_area").innerHTML = htm;
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<cmp 
+context_menu="0"
+logo="{src:skins/time.swf,xywh:[0,1R,0,0]}"
+logo_alpha="0.4"
+name = "☆生活因颓废而精彩☆" 
+link = "" 
+description = "☆夜的精灵☆深山红叶☆在线欣赏☆"
+video_image=""
+models="plugins/merge.swf"
+
+skins="
+skins/vplayer.swf,
+"
+timeout="30"
+buffer_time="10"
+
+plugins="
+plugins/cdn.swf
+plugins/proxy.swf,
+plugins/krc.swf,
+plugins/p2pstream.swf,
+plugins/announce.swf,
+plugins/youku.swf,
+plugins/tudou.swf,
+"
+
+backgrounds = ""
+lists = "2015gp.dll"
+
+src_handler = "" 
+rc_handler = "krc.php?type={type}&title={label}&rd={rd}"
+skin_id = "1"
+play_id = ""
+auto_play = "0"
+auto_open = "1"
+list_delete = "1"
+	
+sound_sample = "true"
+mixer_displace = "true"
+mixer_filter = "true"
+	
+counter = ""
+
+announce_content="☆生活因颓废而精彩☆"
+
+
+/>
